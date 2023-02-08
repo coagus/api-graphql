@@ -1,0 +1,40 @@
+{
+  "name": "api-graphql",
+  "version": "1.0.0",
+  "description": "API simple usando GraphQL",
+  "main": "index.ts",
+  "repository": "https://github.com/coagus/api-graphql.git",
+  "author": "Christian Agustin <christian@agustin.gt>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "webpack",
+    "dev": "nodemon -r tsconfig-paths/register ./src/index.ts",
+    "format": "prettier --write .",
+    "lint": "eslint --fix . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.11.19",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
